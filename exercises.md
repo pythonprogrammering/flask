@@ -42,7 +42,7 @@ For example users = [{"id": 1, "name": "Alice", "favorite_color": "Blue"}, {"id"
 - Implement the following routes:
 
   1. `GET /users`: Return the full list of users.
-  2. `POST /users`: Accept JSON data with `name` and `favorite_color`, assign a unique `id` to each new user, and add them to the `users` list. Return the new user data and a `201` status.
+  2. `POST /users`: Accept JSON data with `name` and `favorite_color`, assign a unique `id` to each new user, and add them to the `users` list. Return the new user data.
   3. `GET /users/<user_id>`: Return the user data for the specified `user_id`. If not found, return a `404` error.
   4. `PUT /users/<user_id>`: Accept JSON data to update the name and/or age of the user with the given `user_id`. Return the updated user data.
   5. `DELETE /users/<user_id>`: Remove the user with the specified `user_id` and return a confirmation message.
@@ -55,7 +55,7 @@ For example users = [{"id": 1, "name": "Alice", "favorite_color": "Blue"}, {"id"
 
 Do your own research on how you can test your Flask application with Pytest. You can take a look at this snippet for inspiration:
 
-```
+```python
 # test_app.py
 import pytest
 from app import app
