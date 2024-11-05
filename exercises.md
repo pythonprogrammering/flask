@@ -47,7 +47,11 @@ For example users = [{"id": 1, "name": "Alice", "favorite_color": "Blue"}, {"id"
   4. `PUT /users/<user_id>`: Accept JSON data to update the name and/or age of the user with the given `user_id`. Return the updated user data.
   5. `DELETE /users/<user_id>`: Remove the user with the specified `user_id` and return a confirmation message.
 
+Note: You will not see the source code change of the list `users`. But first posting a new user and then using GET should return the new user.
 - **Challenge**: Add validation to prevent duplicate names in the list and return a `409 Conflict` status if a user with the same name already exists.
+
+- **Challenge 2**: Instead of reading/writing to the list variable. Use a .json-file.
+
 
 ## Harder exercise
 
